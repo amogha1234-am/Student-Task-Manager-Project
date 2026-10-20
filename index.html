@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Task Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Task Manager</h1>
+        <p>Organize your tasks and achieve your goals!</p>
+
+        <div class="task-input">
+            <input type="text" id="taskInput" placeholder="Enter your task">
+            <input type="date" id="taskDate">
+            <button onclick="addTask()">Add Task</button>
+        </div>
+
+        
+
+<div class="dashboard">
+    <div class="stat-card">
+        <h3>Total Tasks</h3>
+        <p id="totalTasks">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Completed</h3>
+        <p id="completedTasks">0</p>
+    </div>
+
+    <div class="stat-card">
+        <h3>Pending</h3>
+        <p id="pendingTasks">0</p>
+    </div>
+
+    <div class="progress-section">
+        <p>Overall Progress: <span id="progressText">0%</span></p>
+        <div class="progress-bar">
+            <div id="progressFill"></div>
+        </div>
+    </div>
+</div>
+
+
+<ul id="taskList"></ul>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
